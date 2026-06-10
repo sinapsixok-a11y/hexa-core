@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../../components/Navbar';
 
 export const metadata = {
   title: 'Hexa Turnos – Plataforma de Agendamiento Autónomo',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="bg-[#050505] text-[#C5A880] antialiased">
+        <Navbar />
         {children}
       </body>
     </html>
